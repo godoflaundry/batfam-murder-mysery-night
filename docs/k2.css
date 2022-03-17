@@ -1,0 +1,245 @@
+html, 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    font-family: sans-serif;
+}
+
+body.darkmode {
+    background: #222;
+    color: lightgrey;
+}
+
+.darkmode
+a:link {
+    color: lightblue;
+}
+
+.darkmode
+a:visited {
+    color: plum;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.k2-enters-chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 40em;
+    padding: 0.5em;
+    font-family: monospace;
+    flex-grow: 1;
+    border: solid lightgrey;
+}
+
+.darkmode
+.k2-enters-chat {
+    background: #222;
+    color: lime;
+    padding: 0.5em;
+    align-self: center;
+    width:80%  ;
+}
+
+.app-container {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.5em;
+}
+
+.app-container#credits {
+    justify-content: center;
+}
+
+.app-container.visible {
+    display: flex;
+}
+
+.chatbox-container {
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.message-container {
+    display: none;
+    flex-direction: row;
+}
+
+.message-container.visible {
+    display: flex;
+}
+
+/* Characters */
+.username {
+}
+.namename {
+    font-weight: bold;
+}
+
+.Bruce {
+    color: indianred;
+}
+
+.darkmode
+.Cass {
+    color: yellow;
+}
+
+
+.darkmode
+.Damian {
+    color: skyblue;
+}
+
+
+.darkmode
+.Tim {
+    color: hotpink;
+}
+
+
+.darkmode
+.Jason {
+    color: mediumpurple;
+}
+
+
+.darkmode
+.Dick {
+    color: olivedrab;
+}
+
+.darkmode
+.Steph {
+    color: orange;
+}
+
+.darkmode
+.Duke {
+    color: paleturquoise;
+}
+
+
+.darkmode
+.Narrator {
+    color: lightgray;
+    font-style: italic
+}
+
+#typing {
+    display: none;
+    font-style: italic;
+}
+
+#typing.visible {
+    display: block;
+}
+
+.typer {
+    display: none;
+}
+
+.typer.visible {
+    display: inline;
+}
+
+/* Blinking cursor */
+.cursor {
+    -webkit-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 100;}
+    100% {opacity: 0;}
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 100;}
+    100% {opacity: 0;}
+}
+
+/* Accordian menu */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: inherit;
+    transition: 0.4s;
+}
+
+.darkmode
+.accordion {
+    background-color: rgb(53, 53, 53);
+    color: lightgrey;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.darkmode
+.active, .accordion:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+.accordion:before {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.darkmode
+.accordion:before {
+    color: lightgrey;
+}
+
+.active:before {
+    content: "\2212";
+}
+
+.panel {
+    font-size: inherit;
+    padding: 0 1em 1em 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Dark mode toggle */
+#lightdark-btn {
+    background-color: #eee;
+    color: #444;
+    padding: 1em;
+    border: none;
+}
+
+.darkmode
+#lightdark-btn {
+    background-color: rgb(53, 53, 53);
+    color: lightgrey;
+}
