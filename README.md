@@ -6,7 +6,7 @@ You can find the fic on  [tumblr](https://www.google.com/url?q=https://godoflaun
 
 ## I want to read the source code.
 
-This repository is adapted from of oakleaf's project on [github]{https://github.com/justoakleaf/kay2-has-entered-chat}
+This repository is adapted from of oakleaf's project on [github](https://github.com/justoakleaf/kay2-has-entered-chat)
 
 ## I want to read the source code.
 
